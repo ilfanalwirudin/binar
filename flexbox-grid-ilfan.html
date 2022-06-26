@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instajoule</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+        background: #ebe7e7;
+      }
+
+      .header {
+        text-align: center;
+        padding: 32px;
+        background: #e0dddd;
+      }
+
+      #gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+      }
+
+      #gallery img {
+        width: 24%;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .profile {
+        display: grid;
+        flex-direction: row;
+        padding: 0 10px;
+        height: 130px;
+        width: 100%;
+        grid-template-areas:
+          "pp post-count followers-count following-count"
+          "pp post followers following"
+          "nama post followers following"
+          "bio post followers following";
+        padding-left: 90px;
+        margin: 0 0 0 auto;
+      }
+
+      .pp {
+        grid-area: pp;
+      }
+
+      .pp img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+      .post {
+        grid-area: post;
+      }
+      .followers {
+        grid-area: followers;
+      }
+
+      .following {
+        grid-area: following;
+      }
+
+      .post-count {
+        grid-area: post-count;
+        font-weight: bold;
+      }
+
+      .followers-count {
+        grid-area: followers-count;
+        font-weight: bold;
+      }
+
+      .following-count {
+        grid-area: following-count;
+        font-weight: bold;
+      }
+
+      .nama {
+        grid-area: nama;
+        font-weight: bold;
+      }
+
+      .bio {
+        grid-area: bio;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>PHOTO GALLERY INSTAJOULE</h1>
+    </div>
+    <div class="profile">
+      <div class="pp">
+        <img
+          src="https://styles.redditmedia.com/t5_2r5i1/styles/communityIcon_x4lqmqzu1hi81.jpg"
+        />
+      </div>
+      <div class="post">Post</div>
+      <div class="followers">Followers</div>
+      <div class="following">Following</div>
+      <div class="post-count">12</div>
+      <div class="followers-count">420K</div>
+      <div class="following-count">69</div>
+      <div class="nama">Ilfan Alwirudin</div>
+      <div class="bio">Hello guyss welcome to my Instajoule ehe</div>
+    </div>
+
+    <div id="gallery">
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/52e2d6414f51a814f1dc8460962e33791c3ad6e04e507440702d7edc9e4bc5_640.jpg"
+      />
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/51e3d4424d53b10ff3d8992cc12c30771037dbf85254784b7d297ed7934b_640.jpg"
+      />
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/50e1d3474256b10ff3d8992cc12c30771037dbf852547848702a7fdc9e4b_640.jpg"
+      />
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/gd78f8a7fed874e453cbccdf5b87f29aedcdc48b9cf6004918bb3290b04250118615a821065a62bd20da0b43baad42dc2_640.jpg"
+      />
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/57e6d741485bae14f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg"
+      />
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/52e6d0434e51a914f1dc8460962e33791c3ad6e04e50744172297cd6934ec0_640.jpg"
+      />
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/52e2d7424e56b10ff3d8992cc12c30771037dbf85254784a70287bdc9748_640.jpg"
+      />
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/55e7d5464c5aa514f1dc8460962e33791c3ad6e04e507440772872dc914bc0_640.jpg"
+      />
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/52e6dd41485ab10ff3d8992cc12c30771037dbf85254794e732a7cd5934c_640.jpg"
+      />
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/5fe3d74b4e54b10ff3d8992cc12c30771037dbf85254794e73287ad1944f_640.jpg"
+      />
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/57e2d146425aa414f1dc8460962e33791c3ad6e04e50744076287ad3904ecd_640.jpg"
+      />
+      <img
+        src="https://randomwordgenerator.com/img/picture-generator/55e7d5414c55a814f1dc8460962e33791c3ad6e04e50744172287edc9f48cc_640.jpg"
+      />
+    </div>
+  </body>
+</html>
